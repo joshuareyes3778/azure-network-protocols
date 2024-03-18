@@ -44,14 +44,10 @@ Once both machines have been created and are ready for use, connect remotely int
 ### Observing Traffic
 With WireShark ready to be used, traffic to and from the Windows 10 virtual machine can be viewed and filtered for the various types of connection types. The first type of traffic to be observed is ICMP, which can be viewed when pinging the ubuntu VM. Pinging is done via the command prompt or PowerShell with the ping command, directing it to the IP of your desired computer. Other types of traffic that can be filtered and observed include:
 
-- SSH
-  This traffic requires that the other machine be connected into from Secure Shell. This requires a user to "log in" but without the user interface. Once the credentials are entered, SSH traffic can be observed when linux commands are used in the connection. Even so much as typing sends visible traffic. Some of the commands that can be used are "$id," "uname -a," and so on.
-- DHCP
-  This type of traffic is visible when a new IP address is assigned to your current VM using the "ipconfig /renew" command.
-- DNS
-  This type of traffic is visible when "dnslookup" is used to see what the IP address of a website is.
-- RDP
-  This type of traffic is constantly visible coming in through WireShark. This traffic documents quite literally everything that happens on the computer, from mouse movement to typing. This channel serves as a live stream of a computer, which will include all activity on that computer.
+- SSH -- This traffic requires that the other machine be connected into from Secure Shell. This requires a user to "log in" but without the user interface. Once the credentials are entered, SSH traffic can be observed when linux commands are used in the connection. Even so much as typing sends visible traffic. Some of the commands that can be used are "$id," "uname -a," and so on.
+- DHCP -- This type of traffic is visible when a new IP address is assigned to your current VM using the "ipconfig /renew" command.
+- DNS -- This type of traffic is visible when "dnslookup" is used to see what the IP address of a website is.
+- RDP -- This type of traffic is constantly visible coming in through WireShark. This traffic documents quite literally everything that happens on the computer, from mouse movement to typing. This channel serves as a live stream of a computer, which will include all activity on that computer.
   
 </p>
 <br />
